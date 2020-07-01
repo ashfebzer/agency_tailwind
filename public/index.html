@@ -7,9 +7,53 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="stylesheet" href="/build/tailwind.css">
   <title>Agency - We are the Agency.</title>
+<style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+  </style>
 </head>
-<body class="antialiased">
-  hello world!
+
+<body class="antialiased bg-gray-200">
+
+
+
+  <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+
+  	<div class="absolute inset-0 z-negative lg:opacity-100 opacity-50">
+      <video src="vid/road.mp4" autoplay muted loop class="object-cover w-full h-full"></video>
+    </div>
+
+
+  	<!-- Logo -->
+    <div class="relative flex-1 flex justify-between items-center">
+      <a class="font-bold text-2xl" href="#">Agency</a>
+  	</div>
+
+
+	<!-- Hamburger menu -->
+   <label for="menu-toggle" class="relative pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+  <input class="hidden" type="checkbox" id="menu-toggle"/>
+
+
+  <!-- Navigation -->
+
+  <div class="hidden relative lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <nav>
+      <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Home</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">About</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Expertise</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Services</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Testimonials</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Portfolio</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="#">Contact</a></li>
+      </ul>
+    </nav>
+   
+  </div>
+
+  </header>
   
 </body>
 </html>
